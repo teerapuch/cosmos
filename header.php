@@ -11,14 +11,17 @@ include 'config.php';
     <meta name="author" content="Teerapuch Kassakul">
     <meta name="keyword" content="Bootstrap,Admin,Template,PHP, jQuery,CSS,HTML,Dashboard">
     <link rel="shortcut icon" href="assets/img/favicona.png">
-    <title>COSMOS is a PHP Admin Package</title>
+    <title>COSMOS PHP Admin Package</title>
 
     <!-- Icons -->
     <link href="<?php echo $base_url; ?>/assets/node_modules/simple-line-icons/css/simple-line-icons.css"
     rel="stylesheet">
 
     <!-- Main styles for this application -->
-    <link href="<?php echo $base_url; ?>/assets/css/style.css" rel="stylesheet">
+    <?php
+    $css = $base_url.'/assets/css/style.css';
+    echo css($css);
+    ?>
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
     <header class="app-header navbar">
