@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+include 'config.php';
+?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +11,14 @@
     <meta name="author" content="Teerapuch Kassakul">
     <meta name="keyword" content="Bootstrap,Admin,Template,PHP, jQuery,CSS,HTML,Dashboard">
     <link rel="shortcut icon" href="assets/img/favicona.png">
-    <title>COSMOS is a PHP Admin Package that include User management, Media manager, and more</title>
+    <title>COSMOS is a PHP Admin Package</title>
 
     <!-- Icons -->
-    <link href="assets/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="<?php echo $base_url; ?>/assets/node_modules/simple-line-icons/css/simple-line-icons.css"
+    rel="stylesheet">
 
     <!-- Main styles for this application -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="<?php echo $base_url; ?>/assets/css/style.css" rel="stylesheet">
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
     <header class="app-header navbar">
@@ -39,11 +41,10 @@
                     <div class="dropdown-header text-center">
                         <strong>Settings</strong>
                     </div>
-                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Avatar</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+                    <a class="dropdown-item" href="#"><i class="icon-picture"></i> Avatar</a>
+                    <a class="dropdown-item" href="#"><i class="icon-user"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i class="icon-power"></i> Logout</a>
                 </div>
             </li>
         </ul>
-
     </header>
