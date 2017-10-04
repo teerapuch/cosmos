@@ -8,7 +8,7 @@
     <meta name="description" content="COSMOS is a PHP Admin Package that include User management, Media manager, and more">
     <meta name="author" content="Teerapuch Kassakul">
     <meta name="keyword" content="Bootstrap,Admin,Template,PHP, jQuery,CSS,HTML,Dashboard">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" href="assets/img/favicona.png">
     <title>COSMOS is a PHP Admin Package that include User management, Media manager, and more</title>
 
     <!-- Icons -->
@@ -26,19 +26,13 @@
 
         <ul class="nav navbar-nav d-md-down-none">
             <li class="nav-item px-3">
-                <a class="nav-link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item px-3">
-                <a class="nav-link" href="#">Users</a>
-            </li>
-            <li class="nav-item px-3">
-                <a class="nav-link" href="#">Settings</a>
+                PHP Administrator Package
             </li>
         </ul>
         <ul class="nav navbar-nav ml-auto">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                    <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                    <img src="assets/img/avatars/6.jpg" class="img-avatar" alt="admin@getcosmos.com">
                     <span class="d-md-down-none">admin</span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">

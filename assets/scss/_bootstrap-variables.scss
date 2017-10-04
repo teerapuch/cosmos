@@ -1,9 +1,3 @@
-// Bootstrap overrides
-
-//
-// Color system
-//
-
 $white:                           #fff;
 $gray-100:                        #f0f3f5;
 $gray-200:                        #c2cfd6;
@@ -44,7 +38,7 @@ $colors: (
 );
 
 $theme-colors: (
-  primary:                        $blue,
+  primary:                        $orange,
   secondary:                      $gray-300,
   success:                        $green,
   info:                           $cyan,
@@ -54,54 +48,28 @@ $theme-colors: (
   dark:                           $gray-800
 );
 
-// Options
-//
-// Quickly modify global styling by enabling or disabling optional features.
-
 $enable-transitions:              true;
 $enable-rounded:                  false;
 
-// Body
-//
-// Settings for the `<body>` element.
-
 $body-bg:                         #e4e5e6;
-
-// Typography
-//
-// Font, line-height, and color for body text, headings, and more.
 
 $font-size-base:                  0.875rem;
 
-// Breadcrumbs
-
 $breadcrumb-bg:                   #fff;
-
-// Cards
 
 $card-border-color:               $gray-200;
 $card-cap-bg:                     $gray-100;
-
-// Dropdowns
 
 $dropdown-padding-y:              0;
 $dropdown-border-color:           $gray-200;
 $dropdown-divider-bg:             $gray-100;
 
-// Buttons
-
 $btn-secondary-border:            $gray-300;
-
-// Progress bars
 
 $progress-bg:                     $gray-100;
 
-// Tables
-
 $table-bg-accent:                 $gray-100;
 $table-bg-hover:                  $gray-100;
-
-// Forms
 
 $input-group-addon-bg:            $gray-100;
 $input-border-color:              $gray-200;
