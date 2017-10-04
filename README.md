@@ -1,19 +1,18 @@
 # Cosmos project's README
+
 Cosmos is a PHP administrator starter template for develop new software
 
 Before installing Voyager it is very important to take a quick moment to learn What It Is & What It Isn't
 
-Asterisks
+### What Is COSMOS
 
-What Is COSMOS
-
-1.An admin interface for your PHP application
-2.An easy way to management user for your application)
-3.A media manager for your files
+1. An admin interface for your PHP application
+2. An easy way to management user for your application)
+3. A media manager for your files
 
 Cosmos is simply an admin for your PHP application. Whatever you want your app to do on the front-end is completely up to you. You are in control of your application and you can use Cosmos to make your life easier by adding data, editing users, and many other administrative tasks.
 
-What COSMOS Isn't
+### What COSMOS Isn't
 
 * A CMS (Content Management System)
 * A Blogging Platform

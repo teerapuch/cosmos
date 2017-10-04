@@ -18,7 +18,7 @@ include "sidebar.php";
             <h1>Hello COSMOS</h1>
 
         </div>
-    </div>
+    </div><!-- /.animated fadeIn -->
     <!-- /.conainer-fluid -->
 </main>
 
