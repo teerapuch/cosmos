@@ -6,14 +6,13 @@
             </span>
         </footer>
 
-        <!-- Bootstrap and necessary plugins -->
-        <script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="assets/node_modules/pace-progress/pace.min.js"></script>
-
-        <!-- GenesisUI main scripts -->
-        <script src="assets/js/app.js"></script>
-
+        <!-- Main scripts -->
+        <?php
+        echo js('../node_modules/jquery/dist/jquery.min.js');
+        echo js('../node_modules/popper.js/dist/umd/popper.min.js');
+        echo js('../node_modules/bootstrap/dist/js/bootstrap.min.js');
+        echo js('../node_modules/pace-progress/pace.min.js');
+        echo js('app.js');
+        ?>
     </body>
 </html>

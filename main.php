@@ -14,7 +14,6 @@ include "sidebar.php";
 
     <div class="container-fluid">
         <div class="animated fadeIn">
-
             <h1>Hello COSMOS</h1>
             <?php
             $msc = microtime(true);

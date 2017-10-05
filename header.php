@@ -13,14 +13,10 @@ include 'config.php';
     <link rel="shortcut icon" href="assets/img/favicona.png">
     <title>COSMOS PHP Admin Package</title>
 
-    <!-- Icons -->
-    <link href="<?php echo $base_url; ?>/assets/node_modules/simple-line-icons/css/simple-line-icons.css"
-    rel="stylesheet">
-
     <!-- Main styles for this application -->
     <?php
-    $css = $base_url.'/assets/css/style.css';
-    echo css($css);
+    echo css('style.css');
+    echo css('../node_modules/simple-line-icons/css/simple-line-icons.css');
     ?>
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">

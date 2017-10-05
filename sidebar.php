@@ -2,44 +2,43 @@
     <div class="sidebar">
         <nav class="sidebar-nav">
             <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="main.php">
-                        <i class="icon-speedometer"></i>
-                        Dashboard
-                        <span class="badge badge-primary">NEW</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="database.php">
-                        <i class="icon-cup"></i> Databases
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="users.php">
-                        <i class="icon-user"></i> Users
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages.php">
-                        <i class="icon-doc"></i> Pages
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="media.php">
-                        <i class="icon-picture"></i> Medias
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="messages.php">
-                        <i class="icon-bubbles"></i> Messages
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="widgets.html"><i class="icon-calculator"></i> Widgets <span class="badge badge-danger">Alert</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="logout.php"><i class="icon-power"></i> Logout</a>
-                </li>
+                <?php
+                $dashboard_link = array(
+                    'href' => $base_url.'/main.php',
+                    'class' => 'nav-link',
+                );
+                $database_link = array(
+                    'href' => $base_url.'/database.php',
+                    'class' => 'nav-link',
+                );
+                $user_link = array(
+                    'href' => $base_url.'/users.php',
+                    'class' => 'nav-link',
+                );
+                $page_link = array(
+                    'href' => $base_url.'/pages.php',
+                    'class' => 'nav-link',
+                );
+                $media_link = array(
+                    'href' => $base_url.'/medias.php',
+                    'class' => 'nav-link',
+                );
+                $messages_link = array(
+                    'href' => $base_url.'/messages.php',
+                    'class' => 'nav-link',
+                );
+                $logout_link = array(
+                    'href' => $base_url.'/logout.php',
+                    'class' => 'nav-link',
+                );
+                li(anchor('<i class="icon-speedometer"></i>Dashboard<span class="badge badge-primary">NEW</span>',$dashboard_link));
+                li(anchor('<i class="icon-cup"></i> Databases',$database_link));
+                li(anchor('<i class="icon-user"></i> Users',$user_link));
+                li(anchor('<i class="icon-doc"></i> Pages',$page_link));
+                li(anchor('<i class="icon-picture"></i> Medias',$media_link));
+                li(anchor('<i class="icon-envelope"></i> Messages',$messages_link));
+                li(anchor('<i class="icon-power"></i> Logout',$logout_link));
+                ?>
             </ul>
         </nav>
         <button class="sidebar-minimizer brand-minimizer" type="button"></button>
