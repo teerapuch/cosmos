@@ -9,7 +9,7 @@ use Medoo\Medoo;
 // Initialize Your Database
 $database = new Medoo([
     'database_type' => 'mysql',
-    'database_name' => 'zendtut',
+    'database_name' => 'cosmos',
     'server' => 'localhost',
     'username' => 'root',
     'password' => ''

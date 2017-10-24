@@ -16,6 +16,7 @@ include 'config.php';
     <!-- Main styles for this application -->
     <?php
     echo css('style.css');
+    echo css('cosmos.css');
     echo css('../node_modules/simple-line-icons/css/simple-line-icons.css');
     ?>
 </head>
