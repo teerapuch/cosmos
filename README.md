@@ -9,8 +9,6 @@ Cosmos คือระบบ Administrator ที่ถูกสร้างข�
 
 Cosmos is a PHP administrator starter template for develop new software
 
-Before installing Voyager it is very important to take a quick moment to learn What It Is & What It Isn't
-
 ### What Is COSMOS
 
 1. An admin interface for your PHP application
