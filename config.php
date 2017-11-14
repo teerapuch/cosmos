@@ -1,6 +1,6 @@
 <?php
 // Base Url for site
-$base_url = "http://localhost:8000/cosmos";
+$base_url = "http://localhost/cosmos";
 // Use Composer here
 require 'vendor/autoload.php';
 include "library/bootstrap4.php";

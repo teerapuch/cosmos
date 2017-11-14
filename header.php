@@ -7,7 +7,7 @@ include 'config.php';
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="COSMOS is a PHP Admin Package that include User management, Media manager, and more">
+    <meta name="description" content="COSMOS is a PHP Admin Package that include User management, Media manager">
     <meta name="author" content="Teerapuch Kassakul">
     <meta name="keyword" content="Bootstrap,Admin,Template,PHP, jQuery,CSS,HTML,Dashboard">
     <link rel="shortcut icon" href="assets/img/favicona.png">
