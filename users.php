@@ -24,8 +24,8 @@ include "sidebar.php";
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Username</th>
-                                        <th>Registered</th>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
                                         <th>Role</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -33,57 +33,91 @@ include "sidebar.php";
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Vishnu Serghei</td>
-                                        <td>2012/01/01</td>
-                                        <td>Member</td>
-                                        <td>
-                                            <span class="badge badge-success">Active</span>
-                                        </td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Zbyněk Phoibos</td>
-                                        <td>2012/02/01</td>
-                                        <td>Staff</td>
-                                        <td>
-                                            <span class="badge badge-danger">Banned</span>
-                                        </td>
-                                        <td> - </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Einar Randall</td>
-                                        <td>2012/02/01</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <span class="badge badge-secondary">Inactive</span>
-                                        </td>
-                                        <td> - </td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Félix Troels</td>
-                                        <td>2012/03/01</td>
-                                        <td>Member</td>
-                                        <td>
-                                            <span class="badge badge-warning">Pending</span>
-                                        </td>
-                                        <td> - </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Aulus Agmundr</td>
-                                        <td>2012/01/21</td>
-                                        <td>Staff</td>
-                                        <td>
-                                            <span class="badge badge-success">Active</span>
-                                        </td>
-                                        <td> - </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <div class="form-group row">
+                                <label class="col-md-3 form-control-label"
+                                for="firstname">
+                                    Firstname
+                                </label>
+                                <div class="col-md-9">
+                                    <input type="text" id="firstname"
+                                    name="firstname" class="form-control"
+                                    placeholder="Firstname">
+                                </div><!-- /.col-md-9 -->
+                            </div><!-- /.form-group -->
+                            <div class="form-group row">
+                                <label class="col-md-3 form-control-label"
+                                for="lastname">
+                                    Lastname
+                                </label>
+                                <div class="col-md-9">
+                                    <input type="text" id="lastname"
+                                    name="lastname" class="form-control"
+                                    placeholder="Lastname">
+                                </div><!-- /.col-md-9 -->
+                            </div><!-- /.form-group -->
+                            <div class="form-group row">
+                                <label class="col-md-3 form-control-label"
+                                for="email">
+                                    Email
+                                </label>
+                                <div class="col-md-9">
+                                    <input type="email" name="email" id="email"
+                                    class="form-control"
+                                    placeholder="mail@domain.com">
+                                </div>
+                            </div><!-- /.form-group -->
+                            <div class="form-group row">
+                                <label class="col-md-3 form-control-label"
+                                for="password">
+                                    Password
+                                </label>
+                                <div class="col-md-9">
+                                    <input type="password" id="password"
+                                    name="password" class="form-control"
+                                    placeholder="Password">
+                                </div><!-- /.col-md-9 -->
+                            </div><!-- /.form-group -->
+                            <div class="form-group row">
+                                <label class="col-md-3 form-control-label"
+                                for="cfpassword">
+                                    Confirm Password
+                                </label>
+                                <div class="col-md-9">
+                                    <input type="password" id="cfpassword"
+                                    name="cfpassword" class="form-control"
+                                    placeholder="Confirm Password">
+                                </div><!-- /.col-md-9 -->
+                            </div><!-- /.form-group -->
+                            <div class="form-group row">
+                                <label class="col-md-3 form-control-label"
+                                for="role">
+                                    Role
+                                </label>
+                                <div class="col-md-9">
+                                    <select class="form-control" name="role">
+                                        <option value="">-- Select option --</option>
+                                        <option value="1">Admin</option>
+                                        <option value="2">User</option>
+                                    </select>
+                                </div>
+                            </div><!-- /.form-group -->
+                            <div class="form-group row">
+                                <div class="col-md-3">
+                                    <input type="submit"
+                                    class="btn btn-primary"
+                                    value="Save">
+                                </div><!-- /.col-md-9 -->
+                            </div><!-- /.form-group -->
                         </div><!-- /.card-body -->
                     </div><!-- /.card -->
                 </div><!--/.col-lg-12-->

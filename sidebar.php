@@ -15,17 +15,13 @@
                     'href' => $base_url.'/users.php',
                     'class' => 'nav-link',
                 );
-                $page_link = array(
-                    'href' => $base_url.'/pages.php',
-                    'class' => 'nav-link',
-                );
-                $media_link = array(
+                $medias_link = array(
                     'href' => $base_url.'/medias.php',
-                    'class' => 'nav-link',
+                    'class' => 'nav-link'
                 );
-                $messages_link = array(
-                    'href' => $base_url.'/messages.php',
-                    'class' => 'nav-link',
+                $report_user_link = array(
+                    'href' => $base_url.'/report/user.php',
+                    'class' => 'nav-link'
                 );
                 $logout_link = array(
                     'href' => $base_url.'/logout.php',
@@ -34,9 +30,8 @@
                 li(anchor('<i class="icon-speedometer"></i>Dashboard<span class="badge badge-primary">NEW</span>',$dashboard_link));
                 li(anchor('<i class="icon-cup"></i> Databases',$database_link));
                 li(anchor('<i class="icon-user"></i> Users',$user_link));
-                li(anchor('<i class="icon-doc"></i> Pages',$page_link));
-                li(anchor('<i class="icon-picture"></i> Medias',$media_link));
-                li(anchor('<i class="icon-envelope"></i> Messages',$messages_link));
+                li(anchor('<i class="icon-picture"></i> Medias',$medias_link));
+                li(anchor('<i class="icon-chart"></i> Report User',$report_user_link));
                 li(anchor('<i class="icon-power"></i> Logout',$logout_link));
                 ?>
             </ul>
