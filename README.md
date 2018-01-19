@@ -21,3 +21,7 @@ With COSMOS you can create any kind of application your desires. COSMOS are simp
 ### Plugins And Library
 1. font-awesome 4.7.0
 2. simple-line-icons 2.4.0
+
+### Tutorial Video On Youtube
+1.EP 1 Start Setup and Create Template
+Link :: https://www.youtube.com/watch?v=nyr18wSbjTE&t=1s
