@@ -21,29 +21,77 @@
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="card mx-4">
+                        <?php
+                        echo form_open('register/create');
+                        ?>
                         <div class="card-body p-4">
                             <h1>Register</h1>
                             <p class="text-muted">Create your account</p>
-
+                            <?php
+                            if(validation_errors()) {
+                            ?>
+                            <div class="alert alert-danger" role="alert">
+                                <?php
+                                echo validation_errors();
+                                ?>
+                            </div>
+                            <?php
+                            }
+                            ?>
                             <div class="input-group mb-3">
                                 <span class="input-group-addon">@</span>
-                                <input type="text" class="form-control" placeholder="Email">
+                                <?php
+                                $mail = array(
+                                    'type' => 'email',
+                                    'name' => 'email',
+                                    'class' => 'form-control',
+                                    'placeholder' => 'Email'
+                                );
+                                echo form_input($mail);
+                                ?>
                             </div>
 
                             <div class="input-group mb-3">
-                                <span class="input-group-addon"><i class="icon-lock"></i>
+                                <span class="input-group-addon">
+                                    <i class="icon-lock"></i>
                                 </span>
-                                <input type="password" class="form-control" placeholder="Password">
+                                <?php
+                                $pass = array(
+                                    'type' => 'password',
+                                    'name' => 'password',
+                                    'class' => 'form-control',
+                                    'placeholder' => 'Password'
+                                );
+                                echo form_input($pass);
+                                ?>
                             </div>
 
                             <div class="input-group mb-4">
-                                <span class="input-group-addon"><i class="icon-lock"></i>
+                                <span class="input-group-addon">
+                                    <i class="icon-lock"></i>
                                 </span>
-                                <input type="password" class="form-control" placeholder="Repeat password">
+                                <?php
+                                $repeat = array(
+                                    'type' => 'password',
+                                    'name' => 'repeat',
+                                    'class' => 'form-control',
+                                    'placeholder' => 'Repeat Password'
+                                );
+                                echo form_input($repeat);
+                                ?>
                             </div>
-
-                            <button type="button" class="btn btn-block btn-success">Create Account</button>
+                            <?php
+                            $sub = array(
+                                'type' => 'submit',
+                                'value' => 'Create Account',
+                                'class' => 'btn btn-block btn-primary'
+                            );
+                            echo form_submit($sub);
+                            ?>
                         </div>
+                        <?php
+                        echo form_close();
+                        ?>
                         <div class="card-footer p-4">
                             <div class="row">
                                 <div class="col-6">
