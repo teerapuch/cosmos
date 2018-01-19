@@ -22,6 +22,15 @@ With COSMOS you can create any kind of application your desires. COSMOS are simp
 1. font-awesome 4.7.0
 2. simple-line-icons 2.4.0
 
+### Server Requirements
+1.PHP 5.6 or newer is recommended
+2.MySQL (5.1+) via the mysql (deprecated), mysqli and pdo drivers
+
 ### Tutorial Video On Youtube
 1.EP 1 Start Setup and Create Template
+
 Link :: https://www.youtube.com/watch?v=nyr18wSbjTE&t=1s
+
+2.EP 2 Create Register Page save email and password to database
+
+Link :: https://www.youtube.com/watch?v=EGKPpNf3JpI
