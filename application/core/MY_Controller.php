@@ -23,18 +23,6 @@ class MY_Controller extends CI_Controller
         $this->load->view('layout/admin_layout', $this->data);
     }
 
-    protected function admin_css($css = NULL)
-    {
-        $this->data['css'] = (is_null($css)) ? '' : $css;
-        $this->load->view('layout/admin_layout', $this->data);
-    }
-
-    protected function admin_js($js = NULL)
-    {
-        $this->data['js'] = (is_null($js)) ? '' : $js;
-        $this->load->view('layout/admin_layout', $this->data);
-    }
-
 }
 
 ?>

@@ -15,6 +15,18 @@
 
         <!-- Main styles for this application -->
         <?php echo css('style.css'); ?>
+        <?php
+        if (isset($css)) {
+            foreach ($css as $key => $value) {
+                echo link_tag(
+                    array(
+                        'href' => base_url($value),
+                        'rel' => 'stylesheet',
+                        'type'  => 'text/css')
+                );
+            }
+        }
+        ?>
     </head>
     <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
         <header class="app-header navbar">
@@ -25,7 +37,15 @@
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                        <?php echo img(image_url('avatars/6.jpg')); ?>
+                        <?php
+                            $avatar = array(
+                                'src' => image_url('avatars/6.jpg'),
+                                'class' => 'img-avatar',
+                                'alt' => 'avatar',
+                                'title' => 'avatar'
+                            );
+                            echo img($avatar);
+                        ?>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
@@ -40,7 +60,14 @@
                 <nav class="sidebar-nav">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span></a>
+                            <?php
+                                echo anchor('dashboard','<i class="icon-speedometer"></i> Dashboard <span class="badge badge-primary">NEW</span>');
+                            ?>
+                        </li>
+                        <li class="nav-item">
+                            <?php
+                                echo anchor('user','<i class="fa fa-users"></i> User');
+                            ?>
                         </li>
                     </ul>
                 </nav>
@@ -53,7 +80,9 @@
                 <div class="container-fluid">
                     <div class="animated fadeIn">
                         <?php
-                        echo $content;
+                            if(isset($content)) {
+                                echo $content;
+                            }
                         ?>
                     </div>
                 </div>
@@ -67,5 +96,13 @@
         <?php echo js('../node_modules/bootstrap/dist/js/bootstrap.min.js'); ?>
 
         <?php echo js('app.js'); ?>
+        <?php echo js('admin/layout/layout.js'); ?>
+        <?php
+        if (isset($js)) {
+            foreach ($js as $key => $value) {
+                echo '<script src='.base_url($value).' ></script>';
+            }
+        }
+        ?>
     </body>
 </html>

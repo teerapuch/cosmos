@@ -57,3 +57,5 @@ $route['register'] = 'welcome/register';
 $route['register/create'] = 'welcome/create';
 
 $route['dashboard'] = 'admin/dashboard';
+// page for user management
+$route['user'] = 'admin/user';

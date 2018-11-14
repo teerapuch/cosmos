@@ -7393,7 +7393,7 @@ base-chart.chart {
       width: 20px;
       margin: 0 0.5rem 0 0;
       font-size: 14px;
-      color: #536c79;
+      /* color: #536c79; */
       text-align: center; }
     .sidebar .nav-link .badge, .sidebar .navbar .dropdown-toggle .badge, .navbar .sidebar .dropdown-toggle .badge {
       float: right;
