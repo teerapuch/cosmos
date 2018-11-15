@@ -21,6 +21,7 @@ With COSMOS you can create any kind of application your desires. COSMOS are simp
 ### Plugins And Library
 1. font-awesome 4.7.0
 2. simple-line-icons 2.4.0
+3. datatable js
 
 ### Server Requirements
 1.PHP 5.6 or newer is recommended

@@ -54,11 +54,11 @@
                                         $edit_bt = array(
                                             'class' => 'btn btn-outline-primary btn-sm'
                                         );
-                                        echo anchor('form/'.$u->id,'Edit',$edit_bt);
+                                        echo anchor('user/form/'.$u->id,'Edit',$edit_bt);
                                         $delete_bt = array(
                                             'class' => 'btn btn-outline-danger btn-sm'
                                         );
-                                        echo anchor('delete/'.$u->id,'Delete',$delete_bt);
+                                        echo anchor('user/delete/'.$u->id,'Delete',$delete_bt);
                                     ?>
                                 </td>
                             </tr>
